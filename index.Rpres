@@ -1,0 +1,33 @@
+2015 Model Car Mileage Per Gallon Explorer
+========================================================
+author: Mahmut Ali ÖZKURAN
+date: 20-02-2015
+
+Problem
+========================================================
+
+  As ecological thinking is grow up in the public. People begin to think more about their spendings effect on the Earth. While the automobiles have a big impact on ecology as they produced greenhouse gasses. 
+
+Solution
+========================================================
+
+I think that if i could be help people to choose a better car which has less effects on environment. Hence, i have developed this application to help people to choose which car to use.
+
+
+User Friendly
+========================================================
+
+The aplication is developed as Web Application which is located at http://ozkuran.shinyapps.io/2015ModelCarMPGExplorer/. 
+As application have filtering option with both sliders and text input it is so easy to use. 
+
+Extra Properties
+========================================================
+
+As many properties of application present also after every filter you can see summary of data at top of the page. 
+
+```{r}
+data <- read.csv("data/15tstcar-2014-11-13.csv")
+data <- data[,c("Represented.Test.Veh.Make")]
+summary(data)
+```
+
